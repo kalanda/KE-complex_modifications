@@ -1,0 +1,34 @@
+{
+    "title": "Backstick in spanish keyboards for developers",
+    "rules": [
+      {
+          "description": "Adds a spacebar after the open_bracket key to get only the backstick symbol",
+          "manipulators": [
+              {
+                  "conditions": [
+                      {
+                          "input_sources": [
+                              {
+                                  "language": "es"
+                              }
+                          ],
+                          "type": "input_source_if"
+                      }
+                  ],
+                  "from": {
+                      "key_code": "open_bracket"
+                  },
+                  "to": [
+                      {
+                          "key_code": "open_bracket"
+                      },
+                      {
+                          "key_code": "spacebar"
+                      }
+                  ],
+                  "type": "basic"
+              }
+          ]
+      }
+  ]
+}
